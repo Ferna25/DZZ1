@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERN Stranica</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #004080;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #003366;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .slike {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .slike img {
+            max-width: 30%;
+            height: auto;
+            margin: 10px;
+        }
+
+        .animacija1, .animacija2 {
+            width: 100px;
+            height: 100px;
+            background-color: #004080;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .animacija1 {
+            animation: spin 4s infinite linear;
+        }
+
+        .animacija2 {
+            animation: bounce 2s infinite alternate;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-50px); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#vern">O VERN'u</a></li>
+            <li><a href="#animacije">Animacije</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <section id="vern">
+        <h2>O VERN'u</h2>
+        <p>VERN’ danas izvodi ukupno 10 studija na prijediplomskoj i 7 na diplomskoj razini, na kojima studira više od 1.800 studenata, dok VERN’ova mreža alumnija broji više od 6.000 članova.</p>
+        <p>VERN’ je akademski razvoj započeo davne 1994. godine kao prvo hrvatsko privatno poslovno visoko učilište, koje je tijekom svoje transformacije u respektabilnu akademsku instituciju u hrvatsko visoko obrazovanje unijelo poduzetnički način razmišljanja i poduzetničku poslovnu kulturu.</p>
+        <div class="slike">
+            <img src="slika1.jpg" alt="Slika 1">
+            <img src="slika2.jpg" alt="Slika 2">
+            <img src="slika3.jpg" alt="Slika 3">
+        </div>
+    </section>
+    
+    <section id="animacije">
+        <div class="animacija1"><img src="SINISHA.jpg" alt="Sinisa 1"></div>
+        <div class="animacija2"><img src="SINISHA.jpg" alt="Sinisa 2"></div>
+    </section>
+    
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Za više informacija, posjetite našu <a href="https://www.vern.hr">VERN' stranicu</a>.</p>
+    </section>
+</body>
+</html>
